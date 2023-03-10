@@ -1,0 +1,44 @@
+.About h2{
+    overflow: hidden; 
+    border-right: .15em solid #999999; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .05em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s infinite normal;
+  }
+  
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 50%; border-right: 0px;}
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: #999999; }
+  }
+
+.intro {
+    padding: 15px;
+    
+    color: #999999;
+    font-family: 'Kaisei Opti';
+    font-style: normal;
+    font-size: 50px;
+    line-height: 36px;
+}
+
+.pink-text {
+    color: #EBCFC4;
+}
+
+.intro-description {
+    padding: 10px;
+
+    color: #999999;
+    font-family: 'Kaisei Opti';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+}

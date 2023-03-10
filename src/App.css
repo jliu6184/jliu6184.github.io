@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+
+  overflow-wrap: break-word;
+}
+
+/*body {
+  background-color: #f8fafa;
+}*/
+
+.logo-image {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 12%;
+  padding: 25px;
+}
+
+.down-arrow {
+  width: 5%;
+  margin-top: 250px;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  
+  padding: 20px;
+  margin-top: 250px;
+  
+  color: #EBCFC4;
+  font-family: 'Kaisei Opti';
+  font-style: normal;
+  font-size: 50px;
+  line-height: 36px;
+
+  margin-left: 30px;
+}
+
