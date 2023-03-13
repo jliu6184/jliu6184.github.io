@@ -2,23 +2,11 @@
     display: flex;
     justify-content: center;
 
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
-.github {
-    width: 15%;
-    height: auto;
-
-}
-
-.linkedin {
-   width: 15%;
-   height: auto;
-
-}
-
-.email {
-    width: 50%;
+.contact-icon {
+    width: 20%;
     height: auto;
 }

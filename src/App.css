@@ -6,10 +6,6 @@
   overflow-wrap: break-word;
 }
 
-/*body {
-  background-color: #f8fafa;
-}*/
-
 .logo-image {
   display: flex;
   justify-content: flex-start;

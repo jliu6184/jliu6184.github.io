@@ -11,10 +11,12 @@ const arrow = require('./down-arrow.png');
 function App() {
   return (
     <div className="App">
-       <NavBar/>
-       <a href="#">
-       <img src={logo} alt="logo pic" class="logo-image"></img>
-       </a>
+      <div className="NavBar">
+        <NavBar/>
+        <a href="#">
+        <img src={logo} alt="logo pic" class="logo-image"></img>
+        </a>
+       </div>
        
        <section id="about-section">
           <div className = "about-sec">
@@ -23,12 +25,12 @@ function App() {
         </section>
 
         <a href="#experience-section">
-        <img src={arrow} alt="down arrow" class="down-arrow"></img>
+          <img src={arrow} alt="down arrow" class="down-arrow"></img>
         </a>
 
         <section id="experience-section" class="experience-section">
-        <h1 className="title">--- experiences ---</h1>
-          <Experience/>
+          <h1 className="title">--- experiences ---</h1>
+            <Experience/>
         </section>
 
         <section id="project-section" class="project-section">

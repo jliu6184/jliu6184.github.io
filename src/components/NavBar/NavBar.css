@@ -1,3 +1,10 @@
+.Nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 li {
     float: right;
 }
