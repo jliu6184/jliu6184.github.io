@@ -1,22 +1,23 @@
-.About h2{
+.intro{
+    display: inline-block;
     overflow: hidden; 
     border-right: .15em solid #999999; 
-    white-space: nowrap; 
+    white-space: nowrap;
     margin: 0 auto; 
     letter-spacing: .05em;
     animation: 
       typing 3.5s steps(40, end),
-      blink-caret .75s infinite normal;
+      blink-caret .75s step-end infinite;
   }
   
   @keyframes typing {
     from { width: 0% }
-    to { width: 50%; border-right: 0px;}
+    to { width: 24%}
   }
   
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    40% { border-color: #999999; }
+    50% { border-color: #999999; }
   }
 
 .intro {

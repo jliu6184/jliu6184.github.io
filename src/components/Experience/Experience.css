@@ -25,7 +25,6 @@
   margin-bottom: 15px;
 }
 
-
 .image {
   width: 100px;
   height: 100px;
@@ -38,7 +37,8 @@
 
     border-style: solid;
     border-radius: 15px;
-    border-color: rgb(153, 153, 153, 0.3);;
+    border-color: rgb(153, 153, 153, 0);
+    box-shadow: 0 4px 8px 0 rgb(100 86 49 / 10%), 0 6px 20px 0 rgb(100 86 49 / 10%);
     border-width: 3px;
     width: 75%;
     margin: 10px;
@@ -50,14 +50,14 @@
     transform: translateY(-4px);
   }
 
-  .name-header {
+  .ExperienceItem h2{
     display: flex;
     justify-content: flex-start;
     margin-left: 15px;
 
     color: #999999;
-    font-family: 'Kaisei Opti';
-    font-style: normal;
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
     font-size: 25px;
     line-height: 36px;
   }
