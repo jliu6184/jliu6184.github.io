@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
+import Contact from './components/Contact/Contact';
 
 const logo = require('./logo-pic.jpg');
 const arrow = require('./down-arrow.png');
@@ -36,8 +37,8 @@ function App() {
         </section>
 
         <section id="contact-section">
-        <h1 className="title">--- contact ---</h1>
-            
+        <h1 className="title">let's connect!</h1>
+            <Contact/>
         </section>
     </div>
   );
