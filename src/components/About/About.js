@@ -1,10 +1,6 @@
 import { useEffect } from 'react';
 import './About.css';
 
-/*useEffect(() => {
-  return typeWriter();
-}, [""]);*/
-
 function About() {
     return (
       <div className="About">
@@ -14,15 +10,3 @@ function About() {
     );
   }
   export default About;
-
-  /*var i = 0;
-  var txt = "hi, i'm jiajun.";
-  var speed = 50;
-
-  function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("intro").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }*/

@@ -3,74 +3,58 @@ import axios from 'axios';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
-import Project from './components/Project/Project';
+import ExperienceItem from './components/Experience/ExperienceItem';
+import Project from './components/Project/Project.js';
 import Contact from './components/Contact/Contact';
 import { useEffect, useState } from 'react';
 
 const logo = require('./logo-pic.jpg');
 const arrow = require('./down-arrow.png');
 
-const tableMap = {
+/*const tableMap = {
   0: process.env.REACT_APP_EXPERIENCE_TABLE_ID,
   1: process.env.REACT_APP_PROJECT_TABLE_ID,
-}
+}*/
 
 function App() {
-  let [experienceID, setExperienceID] = useState(1);
-  let [experienceItem, setExperienceItem] = useState([]);
+  /*let [experienceItem, setExperienceItem] = useState([]);
 
   useEffect(() => {
-    const url1 = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_PROJECT_TABLE_ID}`;
+    // === FETCHES RESULTS FROM AIRTABLE ===
+    // Create the request URL to pull data from the Airtable
+    const url1 = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_EXPERIENCE_TABLE_ID}`;
 
+    // Create the config for the request (headers, parameters, etc.)
+    // (Differs based on each API so read the documentation!)
     const config = {
       headers : {
         "Authorization" : `Bearer ${process.env.REACT_APP_AUTH_TOKEN}`,
       }
     };
 
+    // Code to actually pull and then use the data
     axios.get(url1, config)
     .then(res => {
       let tableEntries = res.data.records;
-      let items = [];
+
+      // For each record in the table, parse the data and set state to new list
+      // (NOTE: Please create a new copy of the list, we prefer to not modify the current list)
+      let items1 = [];
       tableEntries.forEach(record => {
         let entry = record.fields;
         let item = {
           name: entry["name"],
           description: entry["description"],
-          image: entry["image"][0]["url"],
         }
-        items.push(item);
+        items1.push(item);
       });
-      setExperienceItem(items);
+      setItemBoxes(items1);
     })
     .catch(err=> console.log(err))
 
     // === TELL THE USER THE FETCH IS DONE ===
     console.log("Finished fetching table from Airtable...");
-
-    const url2 = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.enb.REACT_APP_EXPERIENCE_TABLE_ID}`;
-    
-    axios.get(url2, config)
-    .then(res => {
-      let tableEntries = res.data.records;
-      let items = [];
-      tableEntries.forEach(record => {
-        let entry = record.fields;
-        let item = {
-          name: entry["name"],
-          description: entry["description"],
-          image: entry["image"][0]["url"],
-        }
-        items.push(item);
-      });
-      setExperienceItem(items);
-    })
-    .catch(err=> console.log(err))
-
-    console.log("Finished fetching table from Airtable...");
-  }, []);
-
-
+  }, []);*/
   return (
     <div className="App">
       <div className="NavBar">
@@ -92,7 +76,7 @@ function App() {
 
         <section id="experience-section" class="experience-section">
           <h1 className="title">--- experiences ---</h1>
-            <Experience/>
+          <Experience/>
         </section>
 
         <section id="project-section" class="project-section">
