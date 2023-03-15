@@ -10,66 +10,7 @@ import { useEffect, useState } from 'react';
 const logo = require('./logo-pic.jpg');
 const arrow = require('./down-arrow.png');
 
-const tableMap = {
-  0: process.env.REACT_APP_EXPERIENCE_TABLE_ID,
-  1: process.env.REACT_APP_PROJECT_TABLE_ID,
-}
-
 function App() {
-  let [experienceID, setExperienceID] = useState(1);
-  let [experienceItem, setExperienceItem] = useState([]);
-
-  useEffect(() => {
-    const url1 = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.env.REACT_APP_PROJECT_TABLE_ID}`;
-
-    const config = {
-      headers : {
-        "Authorization" : `Bearer ${process.env.REACT_APP_AUTH_TOKEN}`,
-      }
-    };
-
-    axios.get(url1, config)
-    .then(res => {
-      let tableEntries = res.data.records;
-      let items = [];
-      tableEntries.forEach(record => {
-        let entry = record.fields;
-        let item = {
-          name: entry["name"],
-          description: entry["description"],
-          image: entry["image"][0]["url"],
-        }
-        items.push(item);
-      });
-      setExperienceItem(items);
-    })
-    .catch(err=> console.log(err))
-
-    // === TELL THE USER THE FETCH IS DONE ===
-    console.log("Finished fetching table from Airtable...");
-
-    const url2 = `https://api.airtable.com/v0/${process.env.REACT_APP_BASE_ID}/${process.enb.REACT_APP_EXPERIENCE_TABLE_ID}`;
-    
-    axios.get(url2, config)
-    .then(res => {
-      let tableEntries = res.data.records;
-      let items = [];
-      tableEntries.forEach(record => {
-        let entry = record.fields;
-        let item = {
-          name: entry["name"],
-          description: entry["description"],
-          image: entry["image"][0]["url"],
-        }
-        items.push(item);
-      });
-      setExperienceItem(items);
-    })
-    .catch(err=> console.log(err))
-
-    console.log("Finished fetching table from Airtable...");
-  }, []);
-
 
   return (
     <div className="App">
