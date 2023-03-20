@@ -1,3 +1,48 @@
-.bottom{
-    
+.ProjectItem {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 25%;
+    height: 30%;
+    margin: 1%;
+
+
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(153, 153, 153, 0.3);
+    border-width: 3px;
+  }
+  
+.top {
+    margin-left: 2%;
+    width: 100%;
+    inline-size: 100%;
+    text-align: left;
+    white-space: normal;
+
+    color: #999999;
+    font-family: Noto Sans,sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 36px;
 }
+    
+.bottom {
+    width: 100%;
+    inline-size: 100%;
+    text-align: left;
+    white-space: normal;
+
+    margin-left: 2%;
+    margin-bottom: 2%;
+  
+    color: #999999;
+    font-family: Noto Sans,sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+
+    height: 60%;
+    width: 100%;
+}
+  

@@ -38,11 +38,9 @@ function Project() {
 
   return (
     <div className="Project">
-        <div className="ProjectList">
-            {projectItem.map(item => {
-              return <ProjectItem name={item["name"]} description={item["description"]}/>
-            })}
-        </div>
+      {projectItem.map(item => {
+        return <ProjectItem name={item["name"]} description={item["description"]}/>
+      })}
     </div>
   );
 }

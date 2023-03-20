@@ -28,11 +28,21 @@
   margin-top: 250px;
   
   color: #EBCFC4;
-  font-family: 'Kaisei Opti';
+  font-family: Noto Sans,sans-serif;
   font-style: normal;
   font-size: 50px;
   line-height: 36px;
 
   margin-left: 30px;
+}
+
+.end {
+  font-family: Noto Sans,sans-serif;
+  font-style: italic; 
+  font-size: 14px;
+  line-height: 36px;
+
+  color: #999999;
+  padding-top: 50px;
 }
 

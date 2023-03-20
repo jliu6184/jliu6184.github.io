@@ -38,7 +38,8 @@
     border-style: solid;
     border-radius: 15px;
     border-color: rgb(153, 153, 153, 0);
-    box-shadow: 0 4px 8px 0 rgb(100 86 49 / 10%), 0 6px 20px 0 rgb(100 86 49 / 10%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     border-width: 3px;
     width: 75%;
     margin: 10px;
@@ -46,7 +47,7 @@
   }
 
   .ExperienceItem:hover {
-    border-color: #EBCFC4;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: translateY(-4px);
   }
 
@@ -68,7 +69,7 @@
   margin-left: 15px;
 
   color: #999999;
-  font-family: 'Kaisei Opti';
+  font-family: Noto Sans,sans-serif;
   font-style: normal;
   font-size: 15px;
   line-height: 20px;

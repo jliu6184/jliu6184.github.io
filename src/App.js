@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <div className="NavBar">
-        <NavBar/>
-        <a href="#">
-        <img src={logo} alt="logo pic" class="logo-image"></img>
-        </a>
+          <NavBar/>
+          <a href="#">
+            <img src={logo} alt="logo pic" class="logo-image"></img>
+          </a>
        </div>
        
        <section id="about-section">
@@ -44,6 +44,9 @@ function App() {
         <section id="contact-section">
         <h1 className="title">let's connect!</h1>
             <Contact/>
+            <div className="end">
+                <h3>created by jiajun liu</h3>
+            </div>
         </section>
     </div>
   );
