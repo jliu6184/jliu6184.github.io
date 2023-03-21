@@ -4,10 +4,10 @@ function ProjectItem({name, description}) {
     return (
         <div className="ProjectItem">
             <div className="top">
-                {name}
+                <h2>{name}</h2>
             </div>
             <div className="bottom">
-                {description}
+                <p>{description}</p>
             </div>
         </div>
     );

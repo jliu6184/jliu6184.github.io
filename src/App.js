@@ -17,7 +17,7 @@ function App() {
       <div className="NavBar">
           <NavBar/>
           <a href="#">
-            <img src={logo} alt="logo pic" class="logo-image"></img>
+            <img src={logo} alt="logo pic" className="logo-image"></img>
           </a>
        </div>
        
@@ -28,15 +28,15 @@ function App() {
         </section>
 
         <a href="#experience-section">
-          <img src={arrow} alt="down arrow" class="down-arrow"></img>
+          <img src={arrow} alt="down arrow" className="down-arrow"></img>
         </a>
 
-        <section id="experience-section" class="experience-section">
+        <section id="experience-section" className="experience-section">
           <h1 className="title">--- experiences ---</h1>
             <Experience/>
         </section>
 
-        <section id="project-section" class="project-section">
+        <section id="project-section" className="project-section">
         <h1 className="title">--- projects ---</h1>
           <Project/>
         </section>
