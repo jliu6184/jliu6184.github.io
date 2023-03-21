@@ -11,7 +11,6 @@ const logo = require('./logo-pic.jpg');
 const arrow = require('./down-arrow.png');
 
 function App() {
-
   return (
     <div className="App">
       <div className="NavBar">
