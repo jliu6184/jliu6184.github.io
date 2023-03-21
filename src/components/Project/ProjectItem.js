@@ -1,7 +1,7 @@
 import './ProjectItem.css';
 import { useEffect, useState } from 'react';
 
-function ProjectItem({name, description}) {
+function ProjectItem({image, name, description}) {
     useEffect(() => {
 
         const projectCard = [...document.querySelectorAll('.projectCard')];
@@ -27,6 +27,9 @@ function ProjectItem({name, description}) {
 
     return (
         <div className="ProjectItem">
+            <div className="image-div">
+                <img src={image} alt="proj pic" className="image1"></img>
+            </div>
             <div className="top">
                 <h2>{name}</h2>
             </div>

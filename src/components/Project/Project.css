@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
   padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectCard {
@@ -29,6 +33,8 @@
   cursor: pointer;
   z-index: 9;
   opacity: 0.2;
+
+  margin: 5px;
 }
 
 .pre-btn:hover, 
@@ -38,8 +44,10 @@
 
 .pre-btn {
   left: 0;
+  top: 50%;
 }
 
 .nxt-btn {
   right: 0;
+  top: 50%;
 }

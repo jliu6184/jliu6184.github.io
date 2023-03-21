@@ -29,6 +29,7 @@ function Project() {
         let item = {
           name: entry["name"],
           description: entry["description"],
+          image: entry["image"][0]["url"]
         }
         items.push(item);
       });
@@ -45,7 +46,7 @@ function Project() {
       <img src={right} alt='right-arrow' className='nxt-btn'/>
       <div className="projectCard">
         {projectItem.map(item => {
-          return <ProjectItem name={item["name"]} description={item["description"]}/>
+          return <ProjectItem image={item["image"]} name={item["name"]} description={item["description"]}/>
         })}
       </div>
     </div>
