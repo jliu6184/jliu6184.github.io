@@ -1,4 +1,4 @@
-.intro{
+/* .intro{
     display: inline-block;
     overflow: hidden; 
     border-right: .15em solid #999999; 
@@ -18,28 +18,251 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #999999; }
-  }
+  } */
+
+.About {
+  width: 100%;
+}
 
 .intro {
     padding: 15px;
     
     color: #999999;
-    font-family: Noto Sans,sans-serif;
-    font-style: normal;
-    font-size: 50px;
-    line-height: 36px;
+    font-family: 'SpaceMono-Bold';
+    font-style: bold;
+    font-size: 3em;
+    letter-spacing: 0.0001em;
 }
 
 .pink-text {
     color: #EBCFC4;
 }
 
-.intro-description {
-    padding: 10px;
+.bold-text {
+  font-weight: bold;
+}
 
-    color: #999999;
-    font-family: Noto Sans,sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 36px;
+/* .intro-description {
+  padding: 10px;
+
+  color: #999999;
+  font-family: 'KaiseiOpti-Normal';
+  font-style: normal;
+  font-size: 1.8em;
+} */
+
+.intro-scroller {
+  border-radius: 1.5em;
+  width: 100%;
+  cursor: pointer;
+  color: #999999;
+  font-family: 'KaiseiOpti-Normal';
+  font-style: normal;
+  font-size: 1.8em;
+
+  color: #999999;
+  text-align: left;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding-left: 5%;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 8s infinite;
+  font-weight: bold;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+.home {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+
+.left-textbox {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  padding: 2%;
+}
+
+.down-arrow {
+  width: 5%;
+  margin-top: 6%;
+}
+
+.right-picturebox {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  height: auto;
+
+  --s: 15px;  /* size of the frame */
+  --b: 3px;   /* border thickness */
+  --w: 50%;   /* width of the image */
+  --c: rgba(241, 218, 216, 0.56);
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+
+.about {
+  background-color: #f1dad871;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 5%;
+}
+
+.about-header {
+  color: #7C6968;
+
+  font-family: 'SpaceMono-Bold';
+  font-style: normal;
+  font-size: 2em;
+}
+
+.about-text {
+  color: #B8A1A1;
+
+  font-family: 'KaiseiOpti-Normal';
+  font-style: normal;
+  font-size: 1em;
+}
+
+.left-about {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 5%;
+}
+
+.right-about {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  padding: 5%;
+}
+
+.first-box {
+  border: solid;
+  border-radius: 15px 50px;
+  width: 40%;
+  border-color: #B8A1A1;
+  border-width: 1.5px;
+
+  padding: 4%;
+}
+
+.second-box {
+  border: solid;
+  border-radius: 15px 50px;
+  width: 40%;
+  border-color: #B8A1A1;
+  border-width: 1.5px;
+
+  padding: 4%;
+}
+
+.third-box {
+  border: solid;
+  border-radius: 15px 50px;
+  width: 40%;
+  border-color: #B8A1A1;
+  border-width: 1.5px;
+
+  padding: 4%;
+}
+
+.box-header {
+  color: #7C6968;
+
+  font-family: 'SpaceMono-Bold';
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.computer-pic {
+  width: 15%;
+}
+
+.computer-pic:hover {
+  transform: translateY(-5px);
+}
+
+.healthcare-pic {
+  width: 15%;
+}
+
+.healthcare-pic:hover {
+  transform: translateY(-5px);
+}
+
+.music-pic {
+  width: 15%;
+}
+
+.music-pic:hover {
+  transform: translateY(-5px);
 }

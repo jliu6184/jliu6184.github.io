@@ -15,3 +15,23 @@ code {
 ::-webkit-scrollbar {
   display: none;
 }
+
+@font-face {
+  font-family: SpaceMono-Regular;
+  src: url('/src/assets/Space_Mono/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: SpaceMono-Bold;
+  src: url('/src/assets/Space_Mono/SpaceMono-Bold.ttf');
+}
+
+@font-face {
+  font-family: KaiseiOpti-Normal;
+  src: url('/src/assets/KaiseiOpti-Normal.ttf');
+}
+
+@font-face {
+  font-family: Halyard-Normal;
+  src: url('https://fonts.adobe.com/fonts/halyard-variable');
+}
