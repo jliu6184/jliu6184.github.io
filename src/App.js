@@ -2,6 +2,7 @@ import './App.css';
 // import axios from 'axios';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 // import Experience from './components/Experience/Experience';
 // import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
@@ -21,23 +22,13 @@ function App() {
           <About/>
         </div>
 
-        {/* <section id="experience-section" className="experience-section">
-          <h1 className="title">experiences</h1>
-            <Experience/>
-        </section>
+        <div className="contact-sec">
+          <Contact/>
+        </div>
 
-        <section id="project-section" className="project-section">
-        <h1 className="title">projects</h1>
-          <Project/>
-        </section> */}
-
-        {/* <section id="contact-section">
-        <h1 className="title">let's connect!</h1>
-            <Contact/>
-            <div className="end">
-                <h3>created by jiajun liu</h3>
-            </div>
-        </section> */}
+        <div className="footer-sec">
+          <Footer/>
+        </div>
     </div>
   );
 }

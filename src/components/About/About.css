@@ -31,7 +31,7 @@
     padding: 15px;
     
     color: #999999;
-    font-family: 'SpaceMono-Bold';
+    font-family: 'KaiseiOpti-Normal';
     font-style: bold;
     font-size: 3em;
     letter-spacing: 0.0001em;
@@ -235,17 +235,6 @@ img:hover {
   display: flex;
   flex-direction: column;
 }
-/* 
-.about-box-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-  
-  width: 100%;
-
-} */
-
 
 .box-header {
   color: #7C6968;
@@ -277,76 +266,4 @@ img:hover {
 
 .music-pic:hover {
   transform: translateY(-5px);
-}
-
-.contact {
-  padding: 5%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contact-header {
-  color: #999999;
-
-  font-family: 'SpaceMono-Bold';
-  font-style: normal;
-  font-size: 2.5em;
-
-  /* text-decoration: underline #7C6968 dotted;
-  text-underline-offset: 30px;  */
-
-  max-width: 14rem;
-  border-radius: 4px;
-  max-width: 50rem;
-}
-
-.contact-text {
-  color: #B8A1A1;
-
-  font-family: 'KaiseiOpti-Normal';
-  font-style: normal;
-  font-size: 1.25em;
-}
-
-@property --offset {
-  syntax: '<length>';
-  inherits: false;
-  initial-value: 0;
-}
-
-.email-text {
-  color: #B8A1A1;
-  font-size: 1em;
-  text-decoration-skip: none;
-
-  text-underline-offset: var(--offset, 0.2em);
-  
-  text-decoration: underline 0.1em;
-  transition: --offset 400ms, text-decoration-color 400ms;
-}
-
-.email-text:hover,
-.email-text:focus {
-  --offset: 0.4em;
-  text-decoration-color: #EBCFC4;
-  color: #7C6968;
-}
-
-.email-link {
-  text-decoration: none;
-  color: #B8A1A1;
-}
-
-.slideshow-box {
-  width: 100%;
-}
-
-.pictures {
-  width: 100%;
-}
-
-.mySwiper {
-  width: 50%;
 }

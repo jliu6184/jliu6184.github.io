@@ -2,31 +2,17 @@ import { useEffect } from 'react';
 import {useRef} from 'react';
 import './About.css';
 import { useState } from "react";
-import SwiperCore, { EffectCoverflow } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper";
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import './FadeInSection.css';
-import Contact from '../Contact/Contact';
+import '../FadeInSection.css';
 const profile = require('../helpers/profile.jpg');
 const arrow = require('../helpers/down-arrow.png');
 const computer = require('../helpers/monitor.png');
 const healthcare = require('../helpers/healthcare.png');
 const music = require('../helpers/musical-notes.png');
-const meadowlark = require('../helpers/meadowlark.JPG');
-const dc = require('../helpers/dc.JPEG');
-const prom = require('../helpers/prom.JPG');
-const soricha = require ('../helpers/soricha.JPG');
+
 
 /*useEffect(() => {
   return typeWriter();
 }, [""]);*/
-
-SwiperCore.use([EffectCoverflow, Pagination]);
 
 function About() {
   const ref = useRef(null);
@@ -117,29 +103,6 @@ function About() {
               </div>
             </div>
           </div>
-          </FadeInSection>
-          <FadeInSection>
-            <div className="contact">
-              <h1 className="contact-header">let's connect! </h1>
-              <h2 className="contact-text">you can find me here: </h2>
-              <Contact/>
-              <h2 className="contact-text">or email me at <a className="email-link" href="mailto:jliu618@berkeley.edu"><span className="email-text">jliu618@berkeley.edu</span></a>.</h2>
-            </div>
-            <div className="slideshow-box">
-            <Swiper slidesPerView={3.5}
-              spaceBetween={15}
-              freeMode={true}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[FreeMode, Pagination]}
-              className="mySwiper">
-                <SwiperSlide><img src={meadowlark} alt="meadowlark park" className="pictures" id="meadowlark-pic"/></SwiperSlide>
-                <SwiperSlide><img src={dc} alt="dc lake" className="pictures" id="dc-pic"/></SwiperSlide>
-                <SwiperSlide><img src={prom} alt="prom" className="pictures" id="prom-pic"/></SwiperSlide>
-                <SwiperSlide><img src={soricha} alt="soricha" className="pictures" id="soricha-pic"/></SwiperSlide>
-              </Swiper>
-            </div>
           </FadeInSection>
       </div>
     );
