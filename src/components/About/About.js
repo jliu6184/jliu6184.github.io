@@ -73,9 +73,10 @@ function About() {
               <img src={profile} alt="profile" className="profile-pic"/>
             </div>
           </div>
-        {/* </FadeInSection> */}
+
         <FadeInSection>
           <div className="about"  ref={ref}>
+            <div className="big-about-box">
             <div className="left-about">
               <h1 className="about-header">about me</h1>
             </div>
@@ -101,6 +102,7 @@ function About() {
                 </div>
                 <p className="about-text">in my free time, i enjoy playing clarinet and listening to music. i also enjoy <span className="bold-text">reading, watching dramas, and trying new restaurants and cafes</span>.</p>
               </div>
+            </div>
             </div>
           </div>
           </FadeInSection>
