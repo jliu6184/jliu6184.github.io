@@ -1,3 +1,4 @@
+
 /* .intro{
     display: inline-block;
     overflow: hidden; 
@@ -22,6 +23,8 @@
 
 .About {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .intro {
@@ -32,6 +35,11 @@
     font-style: bold;
     font-size: 3em;
     letter-spacing: 0.0001em;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
 }
 
 .pink-text {
@@ -329,4 +337,16 @@ img:hover {
 .email-link {
   text-decoration: none;
   color: #B8A1A1;
+}
+
+.slideshow-box {
+  width: 100%;
+}
+
+.pictures {
+  width: 100%;
+}
+
+.mySwiper {
+  width: 50%;
 }
