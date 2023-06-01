@@ -35,7 +35,7 @@
 .intro {
     padding: 15px;
     
-    color: #999999;
+    color: #B8A1A1;
     font-family: 'KaiseiOpti-Normal';
     font-style: bold;
     font-size: 3em;
@@ -68,12 +68,11 @@
   border-radius: 1.5em;
   width: 100%;
   cursor: pointer;
-  color: #999999;
+  color: #B8A1A1;
   font-family: 'KaiseiOpti-Normal';
   font-style: normal;
   font-size: 1.8em;
 
-  color: #999999;
   text-align: left;
 
   display: flex;
