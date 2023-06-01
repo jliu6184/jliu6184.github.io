@@ -106,7 +106,7 @@
   justify-content: space-around;
 
   padding-top: 8%;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
 }
 
 .left-textbox {
@@ -121,6 +121,10 @@
 .down-arrow {
   width: 5%;
   margin-top: 6%;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
 }
 
 .right-picturebox {
@@ -163,8 +167,14 @@ img:hover {
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
-  padding-bottom: 5%;
+  padding-bottom: 10%;
+
+  /* border: solid;
+  border-radius: 50px;
+  border-color: #B8A1A1;
+  border-width: 1.5px; */
 }
 
 .about-header {
@@ -172,7 +182,15 @@ img:hover {
 
   font-family: 'SpaceMono-Bold';
   font-style: normal;
-  font-size: 2em;
+  font-size: 2.5em;
+
+  text-decoration: underline #7C6968 dotted;
+  text-underline-offset: 30px; 
+
+  padding: 2rem;
+  max-width: 14rem;
+  border-radius: 4px;
+  max-width: 50rem;
 }
 
 .about-text {
@@ -187,53 +205,39 @@ img:hover {
   width: 100%;
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: row;
 
-  padding: 5%;
+  padding: 2%;
+  padding-left: 12%;
+  padding-bottom: 5%;
 }
 
 .right-about {
   width: 100%;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-
-  padding: 5%;
 }
 
-.first-box {
-  border: solid;
-  border-radius: 15px 50px;
-  width: 40%;
-  border-color: #B8A1A1;
-  border-width: 1.5px;
+.about-box {
+  width: 20%;
 
-  padding: 4%;
+  display: flex;
+  flex-direction: column;
 }
+/* 
+.about-box-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 
-.second-box {
-  border: solid;
-  border-radius: 15px 50px;
-  width: 40%;
-  border-color: #B8A1A1;
-  border-width: 1.5px;
+  
+  width: 100%;
 
-  padding: 4%;
-}
+} */
 
-.third-box {
-  border: solid;
-  border-radius: 15px 50px;
-  width: 40%;
-  border-color: #B8A1A1;
-  border-width: 1.5px;
-
-  padding: 4%;
-}
 
 .box-header {
   color: #7C6968;
@@ -265,4 +269,64 @@ img:hover {
 
 .music-pic:hover {
   transform: translateY(-5px);
+}
+
+.contact {
+  padding: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-header {
+  color: #999999;
+
+  font-family: 'SpaceMono-Bold';
+  font-style: normal;
+  font-size: 2.5em;
+
+  /* text-decoration: underline #7C6968 dotted;
+  text-underline-offset: 30px;  */
+
+  max-width: 14rem;
+  border-radius: 4px;
+  max-width: 50rem;
+}
+
+.contact-text {
+  color: #B8A1A1;
+
+  font-family: 'KaiseiOpti-Normal';
+  font-style: normal;
+  font-size: 1.25em;
+}
+
+@property --offset {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0;
+}
+
+.email-text {
+  color: #B8A1A1;
+  font-size: 1em;
+  text-decoration-skip: none;
+
+  text-underline-offset: var(--offset, 0.2em);
+  
+  text-decoration: underline 0.1em;
+  transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.email-text:hover,
+.email-text:focus {
+  --offset: 0.4em;
+  text-decoration-color: #EBCFC4;
+  color: #7C6968;
+}
+
+.email-link {
+  text-decoration: none;
+  color: #B8A1A1;
 }

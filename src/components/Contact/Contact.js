@@ -1,25 +1,16 @@
 import './Contact.css';
-const github = require('../helpers/github-pic.png');
-const linkedin = require('../helpers/linkedin-pic.png');
-const email = require('../helpers/email-pic.png');
+import { SocialIcon } from 'react-social-icons';
+// const github = require('../helpers/github-pic.png');
+// const linkedin = require('../helpers/linkedin-pic.png');
+// const email = require('../helpers/email-pic.png');
 
 function Contact() {
     return (
         <div className="Contact">
             <div className="contact-icons">
-                <a href="https://github.com/jliu6184">
-                    <img src={github} alt="github icon" className="contact-icon"/>
-                </a>
-            </div>
-            <div className="contact-icons">
-                <a href="https://www.linkedin.com/in/jiajun-liu-1ba152251/">
-                    <img src={linkedin} alt="linkedin icon" className="contact-icon"/>
-                </a>
-            </div>
-            <div className="contact-icons">
-                <a href="mailto:jliu618@berkeley.edu">
-                    <img src={email} alt="email icon" className="contact-icon"/>
-                </a>
+                <SocialIcon url="https://github.com/jliu6184" bgColor="transparent" fgColor="#EBCFC4"className="github"/>
+                <SocialIcon url="https://www.linkedin.com/in/jiajun-liu-1ba152251/" bgColor="transparent" fgColor="#EBCFC4"className="linkedin"/>
+                <SocialIcon url="mailto:jliu618@berkeley.edu" bgColor="transparent" fgColor="#EBCFC4"className="email"/>
             </div>
         </div>
     )

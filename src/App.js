@@ -13,10 +13,8 @@ function App() {
   return (
     <div className="App">
       <div className="NavBar">
+          <img src={logo} alt="logo pic" className="logo-image"></img>
           <NavBar/>
-          <a href="#">
-            <img src={logo} alt="logo pic" className="logo-image"></img>
-          </a>
        </div>
        
         <div className = "about-sec">
