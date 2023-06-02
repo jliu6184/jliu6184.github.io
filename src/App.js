@@ -8,16 +8,16 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 // import { useEffect, useState } from 'react';
 
-const logo = require('./JL-1.png');
+// const logo = require('./JL-1.png');
 
 function App() {
   return (
     <div className="App">
       <div className="NavBar">
-          <img src={logo} alt="logo pic" className="logo-image"></img>
+          {/* <img src={logo} alt="logo pic" className="logo-image"></img> */}
           <NavBar/>
        </div>
-       
+
         <div className = "about-sec">
           <About/>
         </div>

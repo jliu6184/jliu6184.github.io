@@ -52,6 +52,11 @@ function About() {
       <div className="About">
         {/* <FadeInSection> */}
           <div className="home">
+            
+            <div className="right-picturebox">
+              <img src={profile} alt="profile" className="about-profile-pic"/>
+            </div>
+
             <div className="left-textbox">
               <h2 className="intro">hi, my name is<span className="pink-text"> jiajun.</span></h2>
               {/* <h3 className="intro-description">i'm a student studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span> at uc berkeley.</h3> */}
@@ -68,9 +73,6 @@ function About() {
               <div className="arrow">
                 <img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
               </div>
-            </div>
-            <div className="right-picturebox">
-              <img src={profile} alt="profile" className="profile-pic"/>
             </div>
           </div>
 

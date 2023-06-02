@@ -22,19 +22,10 @@
   } */
 
 .About {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
 }
 
-.intro {
-    padding: 15px;
-    
+.intro { 
     color: #B8A1A1;
     /* font-family: "halyard-micro", sans-serif;
     font-weight: 400; */
@@ -57,15 +48,6 @@
 .bold-text {
   font-weight: bold;
 }
-
-/* .intro-description {
-  padding: 10px;
-
-  color: #999999;
-  font-family: 'KaiseiOpti-Normal';
-  font-style: normal;
-  font-size: 1.8em;
-} */
 
 .intro-scroller {
   border-radius: 1.5em;
@@ -115,21 +97,22 @@
 }
 
 .home {
-  width: 70vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
-  padding-top: 8%;
+  padding-top: 1%;
   padding-bottom: 12%;
 }
 
 .left-textbox {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
+  background-color:rgba(241, 218, 216, 0.3);
 }
 
 .down-arrow {
@@ -142,9 +125,17 @@
 }
 
 .right-picturebox {
-  width: 75%;
+  /* width: 75%;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
+
+  width: 100%;
+
+}
+
+.about-profile-pic {
+  width: 100%;
+  height: auto;
 }
 
 .profile-pic {
