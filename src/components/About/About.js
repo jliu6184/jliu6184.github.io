@@ -3,6 +3,8 @@ import {useRef} from 'react';
 import './About.css';
 import { useState } from "react";
 import '../FadeInSection.css';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 const profile = require('../helpers/profile.jpg');
 const arrow = require('../helpers/down-arrow.png');
 const computer = require('../helpers/monitor.png');
@@ -108,6 +110,16 @@ function About() {
             </div>
           </div>
           </FadeInSection>
+
+          <FadeInSection>
+            <div className="contact-section">
+              <Contact/>
+            </div>
+          </FadeInSection>
+
+          <div className="footer-section">
+            <Footer/>
+          </div>
       </div>
     );
   }
