@@ -42,6 +42,7 @@ function Experience() {
   
   return (
     <div className="Experience">
+        <h1 className="experience-header">experiences</h1>
         <div className="ExperienceList">
             {experienceItem.map(item => {
               return <ExperienceItem image={item["image"]} name={item["name"]} description={item["description"]}/>

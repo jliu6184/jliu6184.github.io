@@ -2,6 +2,23 @@
   display: flex;
 }
 
+.experience-header {
+  color: #7C6968;
+
+  font-family: "KaiseiOpti-Normal";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5em;
+
+  text-decoration: underline #7C6968 dotted;
+  text-underline-offset: 30px; 
+
+  padding: 2rem;
+  max-width: 14rem;
+  border-radius: 4px;
+  max-width: 50rem;
+}
+
 .left {
   display: flex;
   justify-content: flex-start;
