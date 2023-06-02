@@ -6,6 +6,7 @@ import '../FadeInSection.css';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 const profile = require('../helpers/profile.jpg');
+const profile2 = require('../helpers/new-profile.png');
 const arrow = require('../helpers/down-arrow.png');
 const computer = require('../helpers/monitor.png');
 const healthcare = require('../helpers/healthcare.png');
@@ -55,13 +56,14 @@ function About() {
         {/* <FadeInSection> */}
           <div className="home">
             
-            <div className="right-picturebox">
-              <img src={profile} alt="profile" className="about-profile-pic"/>
-            </div>
+            {/* <div className="right-picturebox">
+              <img src={profile2} alt="profile" className="about-profile-pic"/>
+            </div> */}
 
             <div className="left-textbox">
               <h2 className="intro">hi, my name is<span className="pink-text"> jiajun.</span></h2>
               {/* <h3 className="intro-description">i'm a student studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span> at uc berkeley.</h3> */}
+              <img src={profile2} alt="profile" className="about-profile-pic"/>
               <div className="intro-scroller">i'm a &nbsp;&nbsp;
                 <div className="scroller">
                   <span className="pink-text">
