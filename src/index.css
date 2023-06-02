@@ -16,6 +16,8 @@ code {
   display: none;
 }
 
+@import url("https://use.typekit.net/czt6wum.css");
+
 @font-face {
   font-family: SpaceMono-Regular;
   src: url('/src/assets/Space_Mono/SpaceMono-Regular.ttf');
@@ -31,7 +33,3 @@ code {
   src: url('/src/assets/KaiseiOpti-Normal.ttf');
 }
 
-@font-face {
-  font-family: Halyard-Normal;
-  src: url('https://fonts.adobe.com/fonts/halyard-variable');
-}

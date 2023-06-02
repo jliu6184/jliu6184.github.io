@@ -194,14 +194,15 @@ img:hover {
   border: solid;
   border-radius: 50px;
   border-color: #B8A1A1;
-  border-width: 2px; 
+  border-width: 3px; 
 }
 
 .about-header {
   color: #7C6968;
 
-  font-family: 'SpaceMono-Bold';
+  font-family: "halyard-micro", sans-serif;
   font-style: normal;
+  font-weight: 600;
   font-size: 2.5em;
 
   text-decoration: underline #7C6968 dotted;
@@ -254,7 +255,7 @@ img:hover {
 .box-header {
   color: #7C6968;
 
-  font-family: 'SpaceMono-Bold';
+  font-family: "halyard-micro", sans-serif;
   font-style: normal;
   font-size: 1.5em;
 }
