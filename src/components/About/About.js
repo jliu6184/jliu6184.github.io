@@ -61,9 +61,9 @@ function About() {
             </div> */}
 
             <div className="left-textbox">
-              <h2 className="intro">hi, my name is<span className="pink-text"> jiajun.</span></h2>
               {/* <h3 className="intro-description">i'm a student studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span> at uc berkeley.</h3> */}
               <img src={profile2} alt="profile" className="about-profile-pic"/>
+              <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2>
               <div className="intro-scroller">i'm a &nbsp;&nbsp;
                 <div className="scroller">
                   <span className="pink-text">
