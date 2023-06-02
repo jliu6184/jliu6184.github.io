@@ -36,10 +36,13 @@
     padding: 15px;
     
     color: #B8A1A1;
+    /* font-family: "halyard-micro", sans-serif;
+    font-weight: 400; */
     font-family: 'KaiseiOpti-Normal';
+    /* font-weight: 400; */
     font-style: bold;
     font-size: 3em;
-    letter-spacing: 0.0001em;
+    letter-spacing: -1px;
 }
 
 .arrow {
@@ -112,7 +115,7 @@
 }
 
 .home {
-  width: 100vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -188,6 +191,7 @@ img:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 
   padding-bottom: 5%;
 
@@ -200,7 +204,7 @@ img:hover {
 .about-header {
   color: #7C6968;
 
-  font-family: "halyard-micro", sans-serif;
+  font-family: "KaiseiOpti-Normal";
   font-style: normal;
   font-weight: 600;
   font-size: 2.5em;
@@ -217,7 +221,7 @@ img:hover {
 .about-text {
   color: #B8A1A1;
 
-  font-family: 'KaiseiOpti-Normal';
+  font-family: 'Syne-Regular';
   font-style: normal;
   font-size: 1em;
 }
@@ -255,7 +259,7 @@ img:hover {
 .box-header {
   color: #7C6968;
 
-  font-family: "halyard-micro", sans-serif;
+  font-family: "KaiseiOpti-Normal";
   font-style: normal;
   font-size: 1.5em;
 }
@@ -283,3 +287,4 @@ img:hover {
 .music-pic:hover {
   transform: translateY(-5px);
 }
+

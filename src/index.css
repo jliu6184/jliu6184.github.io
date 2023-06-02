@@ -33,3 +33,8 @@ code {
   src: url('/src/assets/KaiseiOpti-Normal.ttf');
 }
 
+@font-face {
+  font-family: Syne-Regular;
+  src: url('/src/assets/Syne/static/Syne-Regular.ttf');
+}
+
