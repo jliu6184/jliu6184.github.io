@@ -1,21 +1,38 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.37afe51a.css",
-    "main.js": "/personal-website/static/js/main.98ff766c.js",
-    "static/js/787.5809834d.chunk.js": "/personal-website/static/js/787.5809834d.chunk.js",
-    "static/media/saas-pic.jpeg": "/personal-website/static/media/saas-pic.a4f73a787dbae4bf0219.jpeg",
-    "static/media/logo-pic.jpg": "/personal-website/static/media/logo-pic.41d647f137c177693d97.jpg",
-    "static/media/github-pic.png": "/personal-website/static/media/github-pic.d1230310984ab700a264.png",
-    "static/media/berkeley-pic.png": "/personal-website/static/media/berkeley-pic.6967d013129bce207a49.png",
-    "static/media/email-pic.png": "/personal-website/static/media/email-pic.c80425f4367007b3b1d5.png",
-    "static/media/codebase-pic.jpeg": "/personal-website/static/media/codebase-pic.b5922470023dcdd49c61.jpeg",
-    "index.html": "/personal-website/index.html",
-    "main.37afe51a.css.map": "/personal-website/static/css/main.37afe51a.css.map",
-    "main.98ff766c.js.map": "/personal-website/static/js/main.98ff766c.js.map",
-    "787.5809834d.chunk.js.map": "/personal-website/static/js/787.5809834d.chunk.js.map"
+    "main.css": "/static/css/main.721ac6a1.css",
+    "main.js": "/static/js/main.8c6ffc77.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/KaiseiOpti-Normal.ttf": "/static/media/KaiseiOpti-Normal.896ad979d049f612a608.ttf",
+    "static/media/dc.JPEG": "/static/media/dc.ff21b0ba79f80f9ff5f6.JPEG",
+    "static/media/soricha2.JPEG": "/static/media/soricha2.2b5d8d49c03f85378e28.JPEG",
+    "static/media/profile.jpg": "/static/media/profile.2247f7b50b54d1f2fdb4.jpg",
+    "static/media/meadowlark.JPG": "/static/media/meadowlark.13fb81185a83adcf4ae8.JPG",
+    "static/media/prom.JPG": "/static/media/prom.a22a6bd5ee565f66a7d7.JPG",
+    "static/media/soricha.JPG": "/static/media/soricha.af257cc536d3cd13cf5a.JPG",
+    "static/media/saas-pic.jpeg": "/static/media/saas-pic.a4f73a787dbae4bf0219.jpeg",
+    "static/media/new-profile.png": "/static/media/new-profile.78c96ce685c7f1b11a41.png",
+    "static/media/SpaceMono-Regular.ttf": "/static/media/SpaceMono-Regular.ba5622550ada9b5ff2cd.ttf",
+    "static/media/SpaceMono-Bold.ttf": "/static/media/SpaceMono-Bold.2d0dbf42750207f78ffa.ttf",
+    "static/media/Syne-Regular.ttf": "/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
+    "static/media/intro.png": "/static/media/intro.1f7e5ea8a8df83b23d6f.png",
+    "static/media/healthcare.png": "/static/media/healthcare.9b22a9a55757cf638bec.png",
+    "static/media/experiences.png": "/static/media/experiences.3c711fffdb6ccd06910a.png",
+    "static/media/projects.png": "/static/media/projects.ac9e10976f456b2ca55a.png",
+    "static/media/musical-notes.png": "/static/media/musical-notes.919132d76104dde1eacc.png",
+    "static/media/about.png": "/static/media/about.9f40597042ea96d4cf36.png",
+    "static/media/berkeley-pic.png": "/static/media/berkeley-pic.6967d013129bce207a49.png",
+    "static/media/monitor.png": "/static/media/monitor.01ea5670ee60ef2a968f.png",
+    "static/media/right-stars.png": "/static/media/right-stars.21970be5e23c48250a2e.png",
+    "static/media/left-stars.png": "/static/media/left-stars.54c76b2569c1696e9a20.png",
+    "static/media/codebase-pic.jpeg": "/static/media/codebase-pic.b5922470023dcdd49c61.jpeg",
+    "index.html": "/index.html",
+    "main.721ac6a1.css.map": "/static/css/main.721ac6a1.css.map",
+    "main.8c6ffc77.js.map": "/static/js/main.8c6ffc77.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37afe51a.css",
-    "static/js/main.98ff766c.js"
+    "static/css/main.721ac6a1.css",
+    "static/js/main.8c6ffc77.js"
   ]
 }
