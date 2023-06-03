@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import ProjectItem from './ProjectItem';
 import {ProjectList} from '../helpers/ProjectList';
+import Footer from '../Footer/Footer';
+const projects = require('../helpers/projects.png');
 
 
 function Project() {
@@ -43,11 +45,14 @@ function Project() {
 
   return (
     <div className="Project">
+      <img src={projects} alt="project header" className="project-header"></img>
       <div className="project-card">
         {projectItem.map(item => {
           return <ProjectItem image={item["image"]} name={item["name"]} description={item["description"]}/>
         })}
       </div>
+
+      <Footer/>
     </div>
   );
 }

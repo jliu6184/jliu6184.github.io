@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 const profile = require('../helpers/profile.jpg');
 const profile2 = require('../helpers/new-profile.png');
 const intro = require('../helpers/intro.png');
+const about = require('../helpers/about.png');
 const arrow = require('../helpers/down-arrow.png');
 const computer = require('../helpers/monitor.png');
 const healthcare = require('../helpers/healthcare.png');
@@ -94,7 +95,8 @@ function About() {
           <div className="about"  ref={ref}>
             <div className="big-about-box">
             <div className="left-about">
-              <h1 className="about-header">about me</h1>
+              {/* <h1 className="about-header">about me</h1> */}
+              <img src={about} alt="about header" className="about-header"/>
             </div>
             <div className="right-about">
               <div className='about-box'>

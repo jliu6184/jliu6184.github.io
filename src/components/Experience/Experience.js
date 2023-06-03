@@ -5,6 +5,7 @@ import {useRef} from 'react';
 import ExperienceItem from './ExperienceItem'
 import {ExperienceList} from '../helpers/ExperienceList';
 import '../FadeInSection.css';
+import Footer from '../Footer/Footer';
 const experiences = require('../helpers/experiences.png');
 
 
@@ -81,6 +82,7 @@ function Experience() {
             })}
         </div>
         </FadeInSection>
+        <Footer/>
     </div>
   );
 }

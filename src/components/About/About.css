@@ -253,10 +253,13 @@ img:hover {
   text-decoration: underline #7C6968 dotted;
   text-underline-offset: 30px; 
 
-  padding: 2rem;
+  padding: 1%;
+  padding-top: 3%;
   max-width: 14rem;
   border-radius: 4px;
   max-width: 50rem;
+
+  width: 20%;
 }
 
 .about-text {
