@@ -75,13 +75,13 @@ function Experience() {
     <div className="Experience">
         {/* <h1 className="experience-header">experiences</h1> */}
         <img src={experiences} alt="experience header" className="experience-header"></img>
-        <FadeInSection>
+        {/* <FadeInSection> */}
         <div className="ExperienceList">
             {experienceItem.map(item => {
               return <ExperienceItem image={item["image"]} name={item["name"]} description={item["description"]}/>
             })}
         </div>
-        </FadeInSection>
+        {/* </FadeInSection> */}
         <Footer/>
     </div>
   );

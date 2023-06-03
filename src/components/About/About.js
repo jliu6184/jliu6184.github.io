@@ -57,7 +57,7 @@ function About() {
 
     return (
       <div className="About">
-        {/* <FadeInSection> */}
+        <FadeInSection>
           <div className="home">
             
             <div className="right-picturebox">
@@ -73,6 +73,7 @@ function About() {
               </div>
             </div>
           </div>
+        </FadeInSection>
 
         <FadeInSection>
           <div className="mini-section">

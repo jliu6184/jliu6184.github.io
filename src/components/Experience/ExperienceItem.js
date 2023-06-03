@@ -1,3 +1,5 @@
+import "./ExperienceItem.css";
+
 function ExperienceItem({image, name, description}) {
     return (
         <div className="ExperienceItem">

@@ -1,0 +1,76 @@
+
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    width: 20%;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+  
+.right {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 70%;
+    flex-wrap: nowrap;
+  
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+  
+    padding: 15px;
+}
+
+.ExperienceItem {
+    display: flex;
+  
+    border-style: solid;
+    border-radius: 15px;
+    /* background-color: white; */
+    border-color: #B8A1A1;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    border-width: 3px;
+    width: 75%;
+    margin: 10px;
+
+    z-index: 0;
+}
+  
+ .ExperienceItem:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+}
+  
+.ExperienceItem h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+  
+    color: #B8A1A1;
+    font-family: 'Kaisei-Opti';
+    font-style: italic;
+    font-size: 25px;
+    line-height: 36px;
+}
+
+.description-text {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+  
+    color: #7C6968;
+    font-family: "Syne-Regular";
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+  }
