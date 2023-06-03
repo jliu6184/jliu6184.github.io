@@ -36,14 +36,7 @@ function Project() {
           items.push(item);
         });
         items.sort((a, b) => b.year - a.year);
-        console.log(items);
         setProjectItem(items);
-        // let newSkills = projectItem.map(item => {
-        //   console.log(item.skills.split(","));
-        //   return item.skills.split(",");
-        // })
-        // console.log(newSkills);
-        // setProjectSkills(newSkills);
       })
       .catch(err => console.log(err))
 
