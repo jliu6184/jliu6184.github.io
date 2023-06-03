@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "homepage": "https://jliu6184.github.io/",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +11,7 @@
     "dotenv": "^16.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-social-icons": "^5.15.0",
     "swiper": "^9.3.2",
