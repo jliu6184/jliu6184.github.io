@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import {useRef} from 'react';
+import { useRef } from 'react';
 import './About.css';
 import { useState } from "react";
 import '../FadeInSection.css';
@@ -21,8 +21,17 @@ const rightstars = require('../helpers/right-stars.png');
   return typeWriter();
 }, [""]);*/
 
-function About() {
+function About(props) {
   const ref = useRef(null);
+  const initialRef = useRef(null);
+
+  useEffect(() => {
+    if ( props.reference === "contact") {
+      console.log("YES");
+      initialRef.current?.scrollIntoView({behavior: 'smooth'});
+    } 
+  }, [initialRef]);
+
 
   const scrollClick = () => {
     ref.current?.scrollIntoView({behavior: 'smooth'});
@@ -35,7 +44,7 @@ function About() {
       useEffect(() => {
         const observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
-            console.log(`entry`, entry, `is = ${entry.isIntersecting}`);
+            //console.log(`entry`, entry, `is = ${entry.isIntersecting}`);
             setVisible(entry.isIntersecting);
           });
         });
@@ -54,7 +63,6 @@ function About() {
         </div>
       );
     }
-
     return (
       <div className="About">
         <FadeInSection>
@@ -76,7 +84,7 @@ function About() {
         </FadeInSection>
 
         <FadeInSection>
-          <div className="mini-section">
+          <div className="mini-section" ref={ref}>
             <img src={leftstars} alt="stars" className="stars"/>
             <div className="intro-scroller">i'm a &nbsp;&nbsp;
                 <div className="scroller">
@@ -93,7 +101,7 @@ function About() {
         </FadeInSection>
 
         <FadeInSection>
-          <div className="about"  ref={ref}>
+          <div className="about">
             <div className="big-about-box">
             <div className="left-about">
               {/* <h1 className="about-header">about me</h1> */}
@@ -127,7 +135,7 @@ function About() {
           </FadeInSection>
 
           <FadeInSection>
-            <div className="contact-section">
+            <div className="contact-section" ref={initialRef}>
               <Contact/>
             </div>
           </FadeInSection>
