@@ -7,10 +7,13 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 const profile = require('../helpers/profile.jpg');
 const profile2 = require('../helpers/new-profile.png');
+const intro = require('../helpers/intro.png');
 const arrow = require('../helpers/down-arrow.png');
 const computer = require('../helpers/monitor.png');
 const healthcare = require('../helpers/healthcare.png');
 const music = require('../helpers/musical-notes.png');
+const leftstars = require('../helpers/left-stars.png');
+const rightstars = require('../helpers/right-stars.png');
 
 
 /*useEffect(() => {
@@ -56,29 +59,36 @@ function About() {
         {/* <FadeInSection> */}
           <div className="home">
             
-            {/* <div className="right-picturebox">
+            <div className="right-picturebox">
+              <img src={intro} alt="intro" className="about-intro-pic"/>
               <img src={profile2} alt="profile" className="about-profile-pic"/>
-            </div> */}
+            </div>
 
             <div className="left-textbox">
-              {/* <h3 className="intro-description">i'm a student studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span> at uc berkeley.</h3> */}
-              <img src={profile2} alt="profile" className="about-profile-pic"/>
-              <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2>
-              <div className="intro-scroller">i'm a &nbsp;&nbsp;
-                <div className="scroller">
-                  <span className="pink-text">
-                    student.<br/>
-                    programmer.<br/>
-                    musician.<br/>
-                    foodie.<br/>
-                  </span>
-                </div>
-              </div>
+              <h3 className="intro-description">i'm a student studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span> at uc berkeley.</h3>
+              {/* <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2> */}
               <div className="arrow">
                 <img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
               </div>
             </div>
           </div>
+
+        <FadeInSection>
+          <div className="mini-section">
+            <img src={leftstars} alt="stars" className="stars"/>
+            <div className="intro-scroller">i'm a &nbsp;&nbsp;
+                <div className="scroller">
+                  <span className="brown-text">
+                    student.<br/>
+                    coder.<br/>
+                    musician.<br/>
+                    foodie.<br/>
+                  </span>
+                </div>
+            </div>
+            <img src={rightstars} alt="stars" className="stars"/>
+          </div>
+        </FadeInSection>
 
         <FadeInSection>
           <div className="about"  ref={ref}>
@@ -92,7 +102,7 @@ function About() {
                   <img src={computer} alt="computer" className="computer-pic"/>
                   <h3 className="box-header">school...</h3>
                 </div>
-                <p className="about-text">i’m a current sophomore studying <span className="bold-text">computer science and data science</span> at uc berkeley. some groups i'm involved with on campus are codebase, saas, and the berkeley wind ensemble.</p>
+                <p className="about-text">i’m a current sophomore studying <span className="bold-text">computer science and data science</span> at uc berkeley. some groups i'm involved with on campus are <a className="underline-text" href="https://codebase.berkeley.edu/">codebase</a>, <a className="underline-text" href="https://saas.berkeley.edu/">saas</a>, and the berkeley <a className="underline-text" href="https://music.berkeley.edu/performance-opportunities/windensemble/">wind ensemble</a>.</p>
               </div>
               <div className="about-box">
                 <div className="about-box-header">

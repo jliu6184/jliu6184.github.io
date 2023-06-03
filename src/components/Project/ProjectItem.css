@@ -1,19 +1,10 @@
 
 .ProjectItem {
     display: flex;
-    flex-direction: column;
-
-    min-width: 40%;
-    height: 50vh;
-    margin: 2%;
+    flex-direction: row;
 
 
-    border-style: solid;
-    border-radius: 15px;
-    border-color: rgb(153, 153, 153, 0);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-width: 3px;
   }
 
 .ProjectItem:hover {
@@ -21,7 +12,7 @@
     transform: translateY(-4px);
 }
 
-.top {
+.left {
     display: flex;
     justify-content: center;
     margin: 15px;
@@ -33,7 +24,7 @@
     line-height: 36px;
   }
 
-.bottom{
+.right {
     display: flex;
     justify-content: center;
     align-items: center;

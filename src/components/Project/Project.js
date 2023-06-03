@@ -4,9 +4,6 @@ import { useEffect, useState } from 'react';
 import ProjectItem from './ProjectItem';
 import {ProjectList} from '../helpers/ProjectList';
 
-const left = require('../helpers/left-arrow.png');
-const right = require('../helpers/right-arrow.png');
-
 
 function Project() {
 
@@ -29,10 +26,14 @@ function Project() {
         let item = {
           name: entry["name"],
           description: entry["description"],
-          image: entry["image"][0]["url"]
+          image: entry["image"][0]["url"],
+          skills: entry["skills"],
+          year: entry["year"]
         }
         items.push(item);
       });
+      items.sort((a, b) => b.year - a.year);
+      // console.log(items);
       setProjectItem(items);
     })
     .catch(err=> console.log(err))
@@ -42,9 +43,7 @@ function Project() {
 
   return (
     <div className="Project">
-      <img src={left} alt='left-arrow' className='pre-btn'/>
-      <img src={right} alt='right-arrow' className='nxt-btn'/>
-      <div className="projectCard">
+      <div className="project-card">
         {projectItem.map(item => {
           return <ProjectItem image={item["image"]} name={item["name"]} description={item["description"]}/>
         })}

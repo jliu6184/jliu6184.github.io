@@ -36,6 +36,15 @@
     letter-spacing: -1px;
 }
 
+.intro-description {
+    color: #B8A1A1;
+    font-family: 'KaiseiOpti-Normal';
+    font-style: bold;
+    font-size: 1.5em;
+
+    width: 25%;
+}
+
 .arrow {
   display: flex;
   justify-content: center;
@@ -45,27 +54,49 @@
     color: #EBCFC4;
 }
 
+.brown-text {
+  color: #7C6968;
+}
+
 .bold-text {
   font-weight: bold;
 }
 
+.mini-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  background-color: #f1dad871;
+}
+
+.stars {
+  width: 7%;
+  height: 10%;
+}
+
 .intro-scroller {
   border-radius: 1.5em;
-  width: 100%;
+  width: 19%;
   cursor: pointer;
   color: #B8A1A1;
   font-family: 'KaiseiOpti-Normal';
   font-style: normal;
   font-size: 2em;
-
-  text-align: left;
+  font-weight: bold;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
 
-  padding-top: 2%;
-  padding-left: 18%;
+  text-align: left;
+
+  padding-left: 2%;
 }
 
 /* Scroller styling */
@@ -74,7 +105,7 @@
   line-height: 1.2em;
   position: relative;
   overflow: hidden;
-  width: 30%;
+  width: 50%;
 }
 .scroller > span {
   position: absolute;
@@ -100,7 +131,7 @@
 .home {
   width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 
   padding-top: 1%;
@@ -114,14 +145,13 @@
   justify-content: space-evenly;
   align-items: center;
 
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 5%;
 
-  background-color:rgba(241, 218, 216, 0.3);
-
+  /* background-color:rgba(241, 218, 216, 0.3);
   border: solid;
   border-color:#B8A1A1;
-  border-width: 2px;
+  border-width: 2px; */
 }
 
 .down-arrow {
@@ -138,13 +168,22 @@
   display: flex;
   justify-content: center; */
 
-  width: 65%;
+  width: 100%;
+
+  padding-top: 1%;
 
 }
 
 .about-profile-pic {
   width: 25%;
   height: auto;
+  padding-left: 1%;
+}
+
+.about-intro-pic {
+  width: 20%;
+  height: auto;
+  padding-right: 1%;
 }
 
 .profile-pic {
@@ -182,7 +221,7 @@ img:hover {
   flex-direction: row;
   justify-content: center;
 
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 .big-about-box {
@@ -289,5 +328,22 @@ img:hover {
 
 .music-pic:hover {
   transform: translateY(-5px);
+}
+
+.underline-text {
+  text-decoration: none;  
+  color: #B8A1A1;
+  font-family: 'Syne-Regular';
+  font-style: normal;
+  font-size: 1em;
+
+  background-image: linear-gradient(120deg, #f9f9f6 0%, #f9f9f6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+  &:hover {
+    background-size: 100% 88%;
+  }
 }
 
