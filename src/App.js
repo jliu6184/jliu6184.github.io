@@ -12,14 +12,14 @@ import Experience from './components/Experience/Experience';
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 // const logo = require('./JL-1.png');
-const logo = require('./logo.png');
+// const logo = require('./logo-stars.png');
 
 function App() {
   return (
     <Router>
       <div className="App">
       <div className="NavBar">
-          <img src={logo} alt="logo pic" className="logo-image"></img>
+          {/* <img src={logo} alt="logo pic" className="logo-image"></img> */}
           <NavBar/>
        </div>
 
