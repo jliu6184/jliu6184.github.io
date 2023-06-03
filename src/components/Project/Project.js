@@ -54,7 +54,7 @@ function Project() {
   return (
     <div className="Project">
       <img src={projects} alt="project header" className="project-header"></img>
-      <div className="project-card">
+      <div className="project-list">
         {projectItem.map(item => {
           return <ProjectItem image={item["image"]} name={item["name"]} description={item["description"]} skills={item["skills"].split(",")} />
         })}

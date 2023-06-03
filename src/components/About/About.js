@@ -68,7 +68,7 @@ function About(props) {
             </div>
 
             <div className="left-textbox">
-              <h3 className="intro-description">i'm a student studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span> at uc berkeley.</h3>
+              <h3 className="intro-description">i'm a current student at uc berkeley studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span>.</h3>
               {/* <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2> */}
               <div className="arrow">
                 <img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
@@ -80,7 +80,7 @@ function About(props) {
         <FadeInSection>
           <div className="mini-section" ref={ref}>
             <img src={leftstars} alt="stars" className="stars"/>
-            <div className="intro-scroller">i'm a &nbsp;&nbsp;
+            <div className="intro-scroller">i'm a &nbsp;
                 <div className="scroller">
                   <span className="brown-text">
                     student.<br/>

@@ -31,8 +31,9 @@ function Experience() {
         let entry = record.fields;
         let item = {
           name: entry["name"],
-          description: entry["description"],
-          image: entry["image"][0]["url"],
+          role: entry["role"],
+          timeline: entry["timeline"],
+          description: entry["description"]
         }
         items.push(item);
       });
@@ -76,9 +77,9 @@ function Experience() {
         {/* <h1 className="experience-header">experiences</h1> */}
         <img src={experiences} alt="experience header" className="experience-header"></img>
         {/* <FadeInSection> */}
-        <div className="ExperienceList">
+        <div className="experience-list">
             {experienceItem.map(item => {
-              return <ExperienceItem image={item["image"]} name={item["name"]} description={item["description"]}/>
+              return <ExperienceItem name={item["name"]} role={item["role"]} timeline={item["timeline"]} description={item["description"]}/>
             })}
         </div>
         {/* </FadeInSection> */}

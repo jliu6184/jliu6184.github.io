@@ -1,14 +1,17 @@
 import "./ExperienceItem.css";
 
-function ExperienceItem({image, name, description}) {
+function ExperienceItem(props) {
     return (
         <div className="ExperienceItem">
-            <div className="left">
-                <img src={image} alt="exp pic" class="image"></img>
+            <div className="experience-item-top">
+                <div className="experience-item-name">  
+                    <div className="experience-name-header">{props.name}</div>
+                    <div className="experience-role">{props.role}</div>
+                </div>
+                <div className="experience-item-description">{props.description}</div>
             </div>
-            <div className="right">
-                <h2 className="name-header"> {name} </h2>
-                <p className="description-text">{description}</p>
+            <div className="experience-item-bottom">
+                <div className="experience-timeline">{props.timeline}</div>
             </div>
         </div>
     );

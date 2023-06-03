@@ -14,9 +14,11 @@
   padding-right: 72%;
 }
 
-.project-card {
+.project-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  padding-bottom: 5%;
 }
