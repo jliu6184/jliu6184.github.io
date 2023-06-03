@@ -16,18 +16,12 @@ const music = require('../helpers/musical-notes.png');
 const leftstars = require('../helpers/left-stars.png');
 const rightstars = require('../helpers/right-stars.png');
 
-
-/*useEffect(() => {
-  return typeWriter();
-}, [""]);*/
-
 function About(props) {
   const ref = useRef(null);
   const initialRef = useRef(null);
 
   useEffect(() => {
     if ( props.reference === "contact") {
-      console.log("YES");
       initialRef.current?.scrollIntoView({behavior: 'smooth'});
     } 
   }, [initialRef]);

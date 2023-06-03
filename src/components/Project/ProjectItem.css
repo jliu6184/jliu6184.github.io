@@ -1,45 +1,127 @@
-
 .ProjectItem {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
+    width: 80%;
 
-    transition: 0.3s;
+    transition: 0.5s ease;
+
+    z-index: 0;
   }
 
-.ProjectItem:hover {
+/* .ProjectItem:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transform: translateY(-4px);
+} */
+
+.project-item-main {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.left {
+.top {
     display: flex;
-    justify-content: center;
-    margin: 15px;
-
-    color: #999999;
-    font-family: 'Cormorant Garamond';
-    font-style: italic;
-    font-size: 25px;
-    line-height: 36px;
-  }
-
-.right {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    margin: 15px;
 
-    color: #999999;
-    font-family: Noto Sans,sans-serif;
+    height: 100%;
+    width: 100%;
+
+    border-bottom: solid;
+    /* border-color: #f1dad871; */
+    border-color:#7C6968;
+    border-width: 1px;
+
+    padding: 2%;
+}
+
+.project-item-header {
+    width: 60%;
+
+    color: #7C6968;
+    font-family: 'KaiseiOpti-Normal';
+    font-style: italic;
+    font-size: 1.5em;
+
+    text-align: left;
+}
+
+.project-item-description {
+    width: 80%;
+
+    color: #7C6968;
+    font-family: 'Syne-Regular';
     font-style: normal;
-    font-size: 15px;
+    font-size: 1em;
+
+    text-align: left;
+
+    padding-left: 2%;
+    padding-right: 6%;
+}
+
+.skills {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    color: #B8A1A1;
+    font-family: 'Syne-Regular';
+    font-style: normal;
+    font-size: 0.8em;  
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #7C6968;
+    font-family: "Syne-Regular";
+    font-style: normal;
+    font-size: 1em;
     line-height: 20px;
+
+    height: 100%;
+    width: 100%;
+
+    padding-left: 2%;
+}
+
+.ind-skill {
+    border: solid;
+    border-radius: 20px;
+
+    padding: 0.6%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 0.75%;
+}
+
+.ind-skill:hover {
+    color: white;
+    background-color:#7C6968;
+    border-color: transparent;
 }
 
 .image1 {
-    width: 15vw;
+    width: 25vw;
     height: auto;
+
+    transition: 0.6s ease;
+}
+
+.image1:hover {
+    transform: scale(1.08);
 }
 
 .image-div {
@@ -47,5 +129,5 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 20px;
+    padding-bottom: 3%;
 }

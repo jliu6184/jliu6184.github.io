@@ -1,17 +1,25 @@
 import './ProjectItem.css';
 
-function ProjectItem({image, name, description}) {
+function ProjectItem(props) {
 
     return (
         <div className="ProjectItem">
-            <div className="left">
-                <h2>{name}</h2>
+            <div className="project-item-main">
+                <div className="top">
+                    <div className="project-item-header">{props.name}</div>
+                    <div className="project-item-description">{props.description}</div>
+                </div>
+                <div className="bottom">
+                    <div className="skills">
+                        {props.skills.map(item => {
+                            return <p className="ind-skill">{item}</p>
+                        })}
+                    </div>
+                </div>
             </div>
-            <div className="right">
-                <p>{description}</p>
-            </div>
+            
             <div className="image-div">
-                <img src={image} alt="proj pic" className="image1"></img>
+                <img src={props.image} alt="proj pic" className="image1"></img>
             </div>
         </div>
     );
