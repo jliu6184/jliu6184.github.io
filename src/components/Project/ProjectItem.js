@@ -17,7 +17,7 @@ function ProjectItem(props) {
                     </div>
                 </div>
             </div>
-            
+
             <div className="image-div">
                 <img src={props.image} alt="proj pic" className="image1"></img>
             </div>

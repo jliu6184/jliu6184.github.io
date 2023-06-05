@@ -1,29 +1,27 @@
 .Footer {
     width: 100%;  
-    /* background-color: #f1dad871; */
 
     display: flex;
     flex-direction: column;
-
 }
 
 .footer-1 {
-    background-color: #f1dad871;
-
     display: flex;
     justify-content: center;
+
+    background-color: #f1dad871;
 }
 
 .footer-link {
-    padding: 1.5%;
-
-    display: block;
-    color: #B8A1A1;
+    display: block; 
     text-align: center;
-    text-decoration: none;
 
+    color: #B8A1A1;
     font-family: "Syne-Regular";
     font-size: 1em;
+    text-decoration: none;
+
+    padding: 1.5%;
 }
 
 .footer-link:hover {
@@ -31,17 +29,17 @@
 }
 
 .footer-2 {
-    background-color: #dabebe;
-
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
+
     color: #7C6968;
     text-decoration: none;
-
     font-family: 'KaiseiOpti-Normal';
     font-size: 0.85em;
+
+    background-color: #dabebe;
 }
 
 .heart-icon {

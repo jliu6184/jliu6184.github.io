@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import './Footer.css';
-import {Link} from "react-router-dom";
-const heart = require ('../helpers/heart.png');
+const heart = require('../helpers/heart.png');
 
 function Footer() {
     return (
@@ -12,7 +12,7 @@ function Footer() {
                 <Link to="/contact" className="footer-link">contact</Link>
             </div>
             <div className="footer-2">
-                    <p className="footer-2-text">coded with <img src={heart} alt="love" className="heart-icon"/> by jiajun liu 2023</p>
+                <p className="footer-2-text">coded with <img src={heart} alt="love" className="heart-icon" /> by jiajun liu 2023</p>
             </div>
         </div>
     )

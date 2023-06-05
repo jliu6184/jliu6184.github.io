@@ -1,85 +1,79 @@
 .Contact {
-    width: 100%;
+	width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-    padding-bottom: 2%;
+	padding-bottom: 2%;
 }
 
 .contact {
-    width: 100%;
-    height: 100%;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    padding-bottom: 1%;
-  }
-  
-  .contact-header {
-    color: #7C6968;
-  
-    font-family: "KaiseiOpti-Normal";
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2.4em;
+	width: 100%;
+	height: 100%;
 
-    padding-top: 5%;
-  
-    /* text-decoration: underline #7C6968 dotted;
-    text-underline-offset: 30px;  */
-  }
-  
-  .contact-text {
-    color: #B8A1A1;
-  
-    font-family: 'Syne-Regular';
-    font-style: normal;
-    font-size: 1.25em;
-  }
-  
-  @property --offset {
-    syntax: '<length>';
-    inherits: false;
-    initial-value: 0;
-  }
-  
-  .email-text {
-    color: #B8A1A1;
-    font-size: 1em;
-    text-decoration-skip: none;
-  
-    text-underline-offset: var(--offset, 0.2em);
-    
-    text-decoration: underline 0.1em;
-    transition: --offset 400ms, text-decoration-color 400ms;
-  }
-  
-  .email-text:hover,
-  .email-text:focus {
-    --offset: 0.4em;
-    text-decoration-color: #EBCFC4;
-    color: #7C6968;
-  }
-  
-  .email-link {
-    text-decoration: none;
-    color: #B8A1A1;
-  }
-  
-  .slideshow-box {
-    width: 100%;
-  }
-  
-  .pictures {
-    width: 100%;
-  }
-  
-  .mySwiper {
-    width: 55%;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-bottom: 1%;
+}
+
+.contact-header {
+	color: #7C6968;
+	font-family: "KaiseiOpti-Normal";
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2.4em;
+
+	padding-top: 5%;
+}
+
+.contact-text {
+	color: #B8A1A1;
+	font-family: 'Syne-Regular';
+	font-style: normal;
+	font-size: 1.25em;
+}
+
+@property --offset {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0;
+}
+
+.email-text {
+	color: #B8A1A1;
+	font-size: 1em;
+	text-decoration-skip: none;
+	text-underline-offset: var(--offset, 0.2em);
+	text-decoration: underline 0.1em;
+	
+	transition: --offset 400ms, text-decoration-color 400ms;
+}
+
+.email-text:hover,
+.email-text:focus {
+	--offset: 0.4em;
+	text-decoration-color: #EBCFC4;
+	color: #7C6968;
+}
+
+.email-link {
+	text-decoration: none;
+	color: #B8A1A1;
+}
+
+.slideshow-box {
+	width: 100%;
+}
+
+.pictures {
+	width: 100%;
+}
+
+.mySwiper {
+	width: 55%;
+}
