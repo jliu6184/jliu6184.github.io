@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from "react";
+import { animated, useSpring } from 'react-spring';
 import './About.css';
 import '../FadeInSection.css';
 import Contact from '../Contact/Contact';
@@ -57,6 +58,44 @@ function About(props) {
 		);
 	}
 
+	const Boop = ({ x = 0, y = 8, rotation = 0, scale = 1, timing = 150, children }) => {
+		const [isBooped, setIsBooped] = useState(false);
+		const style = useSpring({
+			display: 'inline-block',
+			backfaceVisibility: 'hidden',
+			transform: isBooped
+			? `translate(${x}px, ${y}px)
+				rotate(${rotation}deg)
+				scale(${scale})`
+			: `translate(0px, 0px)
+				rotate(0deg)
+				scale(1)`,
+			  config: {
+				tension: 300,
+				friction: 10,
+			  },
+		  });
+		useEffect(() => {
+		  if (!isBooped) {
+			return;
+		  }
+		  const timeoutId = window.setTimeout(() => {
+			setIsBooped(false);
+		  }, timing);
+		  return () => {
+			window.clearTimeout(timeoutId);
+		  };
+		}, [isBooped, timing]);
+		const trigger = () => {
+		    setIsBooped(true);
+		};
+		return (
+			<animated.span onMouseEnter={trigger} style={style}>
+				{children}
+			</animated.span>
+		);
+	  };
+
 	return (
 		<div className="About">
 			<FadeInSection>
@@ -68,9 +107,11 @@ function About(props) {
 					<div className="left-textbox">
 						<h3 className="intro-description">i'm a current student at uc berkeley studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span>.</h3>
 						{/* <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2> */}
-						<div className="arrow">
-							<img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
-						</div>
+						<Boop rotation={0} timing={200}>
+							<div className="arrow">
+								<img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
+							</div>
+						</Boop>
 					</div>
 				</div>
 			</FadeInSection>
@@ -90,9 +131,9 @@ function About(props) {
 					</div>
 					<img src={rightstars} alt="stars" className="stars" />
 				</div>
-			</FadeInSection>
+			{/* </FadeInSection> */}
 
-			<FadeInSection>
+			{/* <FadeInSection> */}
 				<div className="about">
 					<div className="big-about-box">
 						<div className="left-about">

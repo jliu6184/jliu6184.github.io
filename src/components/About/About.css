@@ -52,6 +52,11 @@
 	width: 25%;
 	height: auto;
 	padding-left: 1%;
+	transition: 0.8s ease-in-out;
+}
+
+.about-profile-pic:hover {
+	transform: rotate(15deg);
 }
 
 .about-intro-pic {
@@ -244,13 +249,13 @@
 .healthcare-pic,
 .music-pic {
 	width: 15%;
+	transition: 0.4s ease;
 }
 
 .computer-pic:hover,
 .healthcare-pic:hover,
 .music-pic:hover {
-	transform: translateY(-5px);
-	transition: 0.4s ease;
+	transform: translateY(-7px);
 }
 
 .underline-text {
