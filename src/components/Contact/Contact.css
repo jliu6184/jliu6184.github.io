@@ -84,7 +84,7 @@
 		font-family: "KaiseiOpti-Normal";
 		font-weight: 600;
 		font-style: normal;
-		font-size: 1.9em;
+		font-size: 1.3em;
 
 		padding-top: 5%;
 	}
@@ -93,7 +93,7 @@
 		color: #B8A1A1;
 		font-family: 'Syne-Regular';
 		font-style: normal;
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 
 	@property --offset {

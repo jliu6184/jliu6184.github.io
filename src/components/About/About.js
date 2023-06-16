@@ -125,7 +125,7 @@ function About(props) {
 								student.<br />
 								coder.<br />
 								musician.<br />
-								foodie.<br />
+								traveler.<br />
 							</span>
 						</div>
 					</div>
@@ -146,7 +146,7 @@ function About(props) {
 									<img src={computer} alt="computer" className="computer-pic" />
 									<h3 className="box-header">school...</h3>
 								</div>
-								<p className="about-text">i’m a current sophomore studying <span className="bold-text">computer science and data science</span> at uc berkeley. some groups i'm involved with on campus are <a className="underline-text" href="https://codebase.berkeley.edu/">codebase</a>, <a className="underline-text" href="https://saas.berkeley.edu/">saas</a>, and the berkeley <a className="underline-text" href="https://music.berkeley.edu/performance-opportunities/windensemble/">wind ensemble</a>.</p>
+								<p className="about-text">i’m a sophomore studying <span className="bold-text">computer science and data science</span> at uc berkeley. groups i'm involved with on campus include <a className="underline-text" href="https://codebase.berkeley.edu/">codebase</a>, <a className="underline-text" href="https://saas.berkeley.edu/">saas</a>, and the berkeley <a className="underline-text" href="https://music.berkeley.edu/performance-opportunities/windensemble/">wind ensemble</a>.</p>
 							</div>
 							<div className="about-box">
 								<div className="about-box-header">
@@ -160,7 +160,7 @@ function About(props) {
 									<img src={music} alt="music notes" className="music-pic" />
 									<h3 className="box-header">other...</h3>
 								</div>
-								<p className="about-text">in my free time, i enjoy playing clarinet and listening to music. i also enjoy <span className="bold-text">reading, watching dramas, and trying new restaurants and cafes</span>.</p>
+								<p className="about-text">in my free time, i enjoy playing clarinet and listening to music. i also enjoy <span className="bold-text">reading, watching asian dramas, and traveling</span>.</p>
 							</div>
 						</div>
 					</div>
