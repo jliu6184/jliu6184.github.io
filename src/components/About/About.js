@@ -2,12 +2,13 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from "react";
 import { animated, useSpring } from 'react-spring';
+import Typewriter from "typewriter-effect";
 import './About.css';
 import '../FadeInSection.css';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 const profile = require('../helpers/new-profile.png');
-const intro = require('../helpers/intro.png');
+const intro = require('../helpers/intro-2.png');
 const about = require('../helpers/about.png');
 const arrow = require('../helpers/down-arrow.png');
 const computer = require('../helpers/monitor.png');
@@ -100,19 +101,24 @@ function About(props) {
 		<div className="About">
 			<FadeInSection>
 				<div className="home">
-					<div className="right-picturebox">
-						<img src={intro} alt="intro" className="about-intro-pic" />
-						<img src={profile} alt="profile" className="about-profile-pic" />
-					</div>
-					<div className="left-textbox">
-						<h3 className="intro-description">i'm a current student at uc berkeley studying <span class="pink-text">computer science</span> and <span class="pink-text">data science</span>.</h3>
-						{/* <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2> */}
-						<Boop rotation={0} timing={200}>
-							<div className="arrow">
-								<img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
-							</div>
-						</Boop>
-					</div>
+					<img src={profile} alt="profile" className="about-profile-pic" />
+					<img src={intro} alt="intro" className="about-intro-pic" />
+					<div className="intro-description"><Typewriter
+						onInit={(typewriter) => {
+							typewriter
+								.typeString("DMV Area <p style='display:inline'>&harr;</p> Bay Area")
+								.pauseFor(1000)
+								.deleteAll()
+								.typeString("CS + DS @ UC Berkeley")
+								.start();
+						}}
+						/></div>
+					{/* <h2 className="intro">hi, i'm<span className="pink-text"> jiajun.</span></h2> */}
+					<Boop rotation={0} timing={200}>
+						<div className="arrow">
+							<img src={arrow} alt="down arrow" className="down-arrow" onClick={scrollClick}></img>
+						</div>
+					</Boop>
 				</div>
 			</FadeInSection>
 
@@ -123,7 +129,7 @@ function About(props) {
 						<div className="scroller">
 							<span className="brown-text">
 								student.<br />
-								coder.<br />
+								engineer.<br />
 								musician.<br />
 								traveler.<br />
 							</span>
@@ -146,7 +152,7 @@ function About(props) {
 									<img src={computer} alt="computer" className="computer-pic" />
 									<h3 className="box-header">school...</h3>
 								</div>
-								<p className="about-text">i’m a sophomore studying <span className="bold-text">computer science and data science</span> at uc berkeley. groups i'm involved with on campus include <a className="underline-text" href="https://codebase.berkeley.edu/">codebase</a>, <a className="underline-text" href="https://saas.berkeley.edu/">saas</a>, and the berkeley <a className="underline-text" href="https://music.berkeley.edu/performance-opportunities/windensemble/">wind ensemble</a>.</p>
+								<p className="about-text">i’m a current sophomore studying <span className="bold-text">computer science and data science</span> at uc berkeley. some groups i'm involved with on campus are <a className="underline-text" href="https://codebase.berkeley.edu/">codebase</a>, <a className="underline-text" href="https://saas.berkeley.edu/">saas</a>, and the berkeley <a className="underline-text" href="https://music.berkeley.edu/performance-opportunities/windensemble/">wind ensemble</a>.</p>
 							</div>
 							<div className="about-box">
 								<div className="about-box-header">
@@ -160,7 +166,7 @@ function About(props) {
 									<img src={music} alt="music notes" className="music-pic" />
 									<h3 className="box-header">other...</h3>
 								</div>
-								<p className="about-text">in my free time, i enjoy playing clarinet and listening to music. i also enjoy <span className="bold-text">reading, watching asian dramas, and traveling</span>.</p>
+								<p className="about-text">in my free time, i enjoy playing clarinet and listening to music. i also enjoy <span className="bold-text">reading, watching dramas, trying new restaurants & cafes, and traveling</span>.</p>
 							</div>
 						</div>
 					</div>
